@@ -25,19 +25,20 @@ public class CatalogoLivros {
     }
 
     public void pesquisarPorTitulor(String autor){
-        List<Livros> livrosAutor = new ArrayList<>();
+        Livros livroporTitulo = null;
 
         if(!livros.isEmpty()){
             for (Livros livros2 : livros) {
                 if(livros2.getTitulo().trim().equalsIgnoreCase(autor)){
-                    livrosAutor.add(livros2);
+                    livroporTitulo = livros2;
                 }
             }
+            
         }
         else{
             System.out.println("Lista nao tem titulo selecionado");
         }
-    
+        System.out.println(livroporTitulo);
     }
     
     public List<Livros> pesquisarPorIntervaloAnos(int anoInicial, int anoFinal){
@@ -49,6 +50,7 @@ public class CatalogoLivros {
                     livrosAno.add(livros2);
                 }
             }
+            System.out.println(livrosAno);
         }
         else{
             System.out.println("Nao encontrou nenhum livro entre esses periodos");

@@ -6,7 +6,10 @@ public class CatalogoLivrosApp {
         livros.adicionarLivros("Marte", "Paulo coelho", 2015);
         livros.adicionarLivros("Saturno", "tifoid", 2005);
 
-        livros.pesquisarPorAutor("thanos");
-        livros.pesquisarPorIntervaloAnos(2026,2029);
+       
+
+        livros.pesquisarPorTitulor("Morte");
+        livros.pesquisarPorIntervaloAnos(2000,2005);
+        livros.pesquisarPorAutor("Paulo coelho");
     }
 }
